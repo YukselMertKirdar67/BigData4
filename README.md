@@ -84,6 +84,7 @@ db.expense.aggregate([
   },
   { $sort: { totalSpent: -1 } }
 ])
+```
 
 ## 🛠️ Technologies Used
 
