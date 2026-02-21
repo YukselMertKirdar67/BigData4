@@ -35,7 +35,7 @@ The NiFi pipeline performs:
 
 4️⃣ Merge/transform data where necessary
 
-5️⃣ Load processed data into local MongoDB database (`big25`)
+5️⃣ Load processed data into local MongoDB database (`targetdb`)
 
 All collections share consistent naming.
 
@@ -105,7 +105,7 @@ db.expense.aggregate([
 
 4️⃣ Execute NiFi pipeline
 
-5️⃣ Verify data loaded into local MongoDB (big25)
+5️⃣ Verify data loaded into local MongoDB (targetdb)
 
 6️⃣ Run aggregation queries
 
