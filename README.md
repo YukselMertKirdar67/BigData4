@@ -13,6 +13,9 @@ ETL Tool:
 - Apache NiFi
 Destination:
 - Local MongoDB
+
+
+
 ![Architecture](architecture.png)
 
 ## 📂 Data Sources
@@ -43,7 +46,7 @@ The NiFi flow definition is available in `nifi/nifi-flow.json`.
 ## 🗄️ Destination Database
 
 Database Name:
-big25
+targetdb
 Collections:
 - expenses
 - emp
@@ -104,8 +107,16 @@ db.expenses.aggregate([
 ### NiFi Flow
 ![NiFi](screenshots/nifi-canvas.png)
 
+
+
 ### MongoDB Result
-![Mongo](screenshots/mongo-result.png)
+![Mongo](screenshots/mongo-result1.png)
+![Mongo](screenshots/mongo-result2.png)
+![Mongo](screenshots/mongo-result3.png)
+
+
+
+
 
 ## 🚀 How to Run
 
