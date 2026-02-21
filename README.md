@@ -13,6 +13,7 @@ ETL Tool:
 - Apache NiFi
 Destination:
 - Local MongoDB
+![Architecture](architecture.png)
 
 ## 📂 Data Sources
 
@@ -37,14 +38,14 @@ The NiFi pipeline performs:
 
 5️⃣ Load processed data into local MongoDB database (`targetdb`)
 
-All collections share consistent naming.
+The NiFi flow definition is available in `nifi/nifi-flow.json`.
 
 ## 🗄️ Destination Database
 
 Database Name:
 big25
 Collections:
-- expense
+- expenses
 - emp
 - dept
 All data stored in JSON format.
@@ -64,6 +65,8 @@ The following analytical questions were answered:
  Grouping expenses by employee and sorting descending.
 
 ## 📊 Example Aggregation (Simplified)
+
+Aggregation queries are available in `mongodb/aggregation.js`.
 
 ```javascript
 db.expenses.aggregate([
@@ -94,6 +97,15 @@ db.expenses.aggregate([
 -Apache NiFi
 -JSON Data Processing
 -MongoDB Aggregation Framework
+
+
+## Screenshots
+
+### NiFi Flow
+![NiFi](screenshots/nifi-canvas.png)
+
+### MongoDB Result
+![Mongo](screenshots/mongo-result.png)
 
 ## 🚀 How to Run
 
