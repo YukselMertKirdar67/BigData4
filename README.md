@@ -98,16 +98,25 @@ db.expense.aggregate([
 ## 🚀 How to Run
 
 1️⃣ Start MongoDB (source EC2)
+
 2️⃣ Start MySQL (source EC2)
+
 3️⃣ Start Apache NiFi
+
 4️⃣ Execute NiFi pipeline
+
 5️⃣ Verify data loaded into local MongoDB (big25)
+
 6️⃣ Run aggregation queries
 
 ## 🎯 Learning Outcomes
 
 -Cloud-based distributed data ingestion
+
 -ETL pipeline design using NiFi
+
 -Data transformation to JSON
+
 -MongoDB aggregation & joins ($lookup)
+
 -Multi-source data consolidation
