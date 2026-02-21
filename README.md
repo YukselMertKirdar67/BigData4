@@ -66,7 +66,7 @@ The following analytical questions were answered:
 ## 📊 Example Aggregation (Simplified)
 
 ```javascript
-db.expense.aggregate([
+db.expenses.aggregate([
   {
     $lookup: {
       from: "emp",
@@ -79,7 +79,7 @@ db.expense.aggregate([
   {
     $group: {
       _id: "$employee.ename",
-      totalSpent: { $sum: "$amount" }
+      totalSpent: { $sum: "$payment" }
     }
   },
   { $sort: { totalSpent: -1 } }
