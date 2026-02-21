@@ -28,10 +28,15 @@ Initial loading:
 
 The NiFi pipeline performs:
 1️⃣ Extract data from MongoDB (EC2)
+
 2️⃣ Extract data from MySQL (EC2)
+
 3️⃣ Convert records into JSON format
+
 4️⃣ Merge/transform data where necessary
+
 5️⃣ Load processed data into local MongoDB database (`big25`)
+
 All collections share consistent naming.
 
 ## 🗄️ Destination Database
